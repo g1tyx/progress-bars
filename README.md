@@ -1,4 +1,14 @@
-# Progress Bars
+# 进度条（Progress Bars）
+
+
+
+汉化版：http://likexia.gitee.io/progress-bars
+
+英文版：https://polatrite.github.io/progress-bars/
+
+U77：http://www.u77.com/game/4240
+
+
 
 A HTML5 incremental game with an interesting take on progress bars and resource management. This is a basic unfolding game created for a 48-hour personal game jam.
 
@@ -18,3 +28,5 @@ A HTML5 incremental game with an interesting take on progress bars and resource 
 1. Submit it! This is a simple game jam project, so I'll almost always accept!
 
 #### Created by Polatrite
+
+
