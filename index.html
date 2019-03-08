@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Progress Bars v1.1.0</title>
+	<title>进度条 - Progress Bars v1.1.0</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	
 	
@@ -70,17 +70,17 @@ window.console = console;
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
 				<h4 class="modal-title" id="saveLoadModalLabel">保存/导入存档</h4>
 			</div>
 			<div class="modal-body">
-				<label>To save, simply copy the following text and save it as a text file on your computer.</label>
+				<label>要保存，只需复制以下文本并将其保存为计算机上的文本文件。</label>
 				<textarea id="saveTextData" style="width: 100%; height: 10em; font-size: 1em;"></textarea>
-				<button id="selectSaveTextData" type="button" class="btn btn-default">Select All Text</button>
+				<button id="selectSaveTextData" type="button" class="btn btn-default">全选文本</button>
 				<hr>
-				<label>To load, paste your text file into this block, then click "Load Text Data".</label>
+				<label>要加载存档，请将文本文件粘贴到此块中，然后单击“加载文本数据”。</label>
 				<textarea id="loadTextData" style="width: 100%; height: 10em; font-size: 1em;"></textarea>
-				<div id="loadTextDataFailedAlert" class="alert alert-danger hidden">We had trouble loading your text data. Please make sure your data is valid and try again!</div>
+				<div id="loadTextDataFailedAlert" class="alert alert-danger hidden">我们在加载文本数据时遇到了问题。请确保您的数据是有效的，然后重试!</div>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -107,15 +107,15 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.stone.workers}
+					工人: ${currencies.stone.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.stone.unitPrice}
+					价格: $${currencies.stone.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.stone.computedSpeed}
+					速度: ${currencies.stone.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.stone.supply}/${currencies.stone.maxSupply}
@@ -144,14 +144,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.tools1.workers}
+					工人: ${currencies.tools1.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.tools1.computedSpeed}
+					速度: ${currencies.tools1.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.tools1.supply}/${currencies.tools1.maxSupply}
@@ -179,7 +179,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.wood.workers}
+					工人: ${currencies.wood.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.wood.unitPrice}
@@ -187,7 +187,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.wood.computedSpeed}
+					速度: ${currencies.wood.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.wood.supply}/${currencies.wood.maxSupply}
@@ -225,14 +225,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.mountain.workers}
+					工人: ${currencies.mountain.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.mountain.computedSpeed}
+					速度: ${currencies.mountain.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.mountain.supply}/${currencies.mountain.maxSupply}
@@ -263,14 +263,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.forest.workers}
+					工人: ${currencies.forest.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.forest.computedSpeed}
+					速度: ${currencies.forest.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.forest.supply}/${currencies.forest.maxSupply}
@@ -302,7 +302,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.ore.workers}
+					工人: ${currencies.ore.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.ore.unitPrice}
@@ -310,7 +310,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.ore.computedSpeed}
+					速度: ${currencies.ore.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.ore.supply}/${currencies.ore.maxSupply}
@@ -337,14 +337,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.tools4.workers}
+					工人: ${currencies.tools4.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.tools4.computedSpeed}
+					速度: ${currencies.tools4.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.tools4.supply}/${currencies.tools4.maxSupply}
@@ -370,7 +370,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.coral.workers}
+					工人: ${currencies.coral.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.coral.unitPrice}
@@ -378,7 +378,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.coral.computedSpeed}
+					速度: ${currencies.coral.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.coral.supply}/${currencies.coral.maxSupply}
@@ -439,11 +439,11 @@ window.console = console;
 			<!-- sales1 -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will transport and sell top-side goods.<br>Sells <label class='text-highlight-color'>Stone</label>, <label class='text-highlight-color'>Ore</label>, <label class='text-highlight-color'>Wood</label> and <label class='text-highlight-color'>Rubber</label>">
-				Commodity Sales L${currencies.sales1.level}
+				商品销售 L${currencies.sales1.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.sales1.workers}
+					工人: ${currencies.sales1.workers}
 				</div>
 				<div class="col-md-6">
 					Last Sale: $${currencies.sales1.lastSale}
@@ -451,10 +451,10 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.sales1.computedSpeed}
+					速度: ${currencies.sales1.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.sales1.supply}/${currencies.sales1.maxSupply}
+					供应: ${currencies.sales1.supply}/${currencies.sales1.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="sales1AddWorker" class="btn btn-default btn-xs color-sales1 pull-left">&nbsp;+&nbsp;</button>
@@ -470,10 +470,10 @@ window.console = console;
 			</div>
 		</div>
 		<div class="bindto-player text-center well well-sm">
-			<button type="button" id="clickMoney" class="btn btn-default btn-md" style="width: 160px;"><b>Earn Money</b></button> <br>
-			<button type="button" id="clickHireWorker" class="btn btn-default btn-md" style="width: 160px;">Buy Worker $${workerCost}</button> <br>
-			<h4>Current money: $${currencies.money.supply}</h4>
-			${workers} workers, ${workersUsed} used
+			<button type="button" id="clickMoney" class="btn btn-default btn-md" style="width: 160px;"><b>赚钱</b></button> <br>
+			<button type="button" id="clickHireWorker" class="btn btn-default btn-md" style="width: 160px;">购买工人 $${workerCost}</button> <br>
+			<h4>当前金钱: $${currencies.money.supply}</h4>
+			${workers} 工人, ${workersUsed} 忙碌中
 		</div>
 		<div id="sales2Div" class="invisible">
 			<!-- sales2 -->
@@ -483,7 +483,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.sales2.workers}
+					工人: ${currencies.sales2.workers}
 				</div>
 				<div class="col-md-6">
 					Last Sale: $${currencies.sales2.lastSale}
@@ -491,10 +491,10 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.sales2.computedSpeed}
+					速度: ${currencies.sales2.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.sales2.supply}/${currencies.sales2.maxSupply}
+					供应: ${currencies.sales2.supply}/${currencies.sales2.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="sales2AddWorker" class="btn btn-default btn-xs color-sales2 pull-left">&nbsp;+&nbsp;</button>
@@ -526,7 +526,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.rubber.workers}
+					工人: ${currencies.rubber.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.rubber.unitPrice}
@@ -534,7 +534,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.rubber.computedSpeed}
+					速度: ${currencies.rubber.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.rubber.supply}/${currencies.rubber.maxSupply}
@@ -561,14 +561,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.tools2.workers}
+					工人: ${currencies.tools2.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.tools2.computedSpeed}
+					速度: ${currencies.tools2.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.tools2.supply}/${currencies.tools2.maxSupply}
@@ -594,7 +594,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.food.workers}
+					工人: ${currencies.food.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.food.unitPrice}
@@ -602,7 +602,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.food.computedSpeed}
+					速度: ${currencies.food.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.food.supply}/${currencies.food.maxSupply}
@@ -635,14 +635,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.ocean.workers}
+					工人: ${currencies.ocean.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.ocean.computedSpeed}
+					速度: ${currencies.ocean.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.ocean.supply}/${currencies.ocean.maxSupply}
@@ -671,14 +671,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.prairie.workers}
+					工人: ${currencies.prairie.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.prairie.computedSpeed}
+					速度: ${currencies.prairie.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.prairie.supply}/${currencies.prairie.maxSupply}
@@ -711,7 +711,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.oil.workers}
+					工人: ${currencies.oil.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.oil.unitPrice}
@@ -719,7 +719,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.oil.computedSpeed}
+					速度: ${currencies.oil.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.oil.supply}/${currencies.oil.maxSupply}
@@ -748,14 +748,14 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.tools3.workers}
+					工人: ${currencies.tools3.workers}
 				</div>
 				<div class="col-md-6">
 				</div>
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.tools3.computedSpeed}
+					速度: ${currencies.tools3.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.tools3.supply}/${currencies.tools3.maxSupply}
@@ -783,7 +783,7 @@ window.console = console;
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Workers: ${currencies.livestock.workers}
+					工人: ${currencies.livestock.workers}
 				</div>
 				<div class="col-md-6">
 					Price: $${currencies.livestock.unitPrice}
@@ -791,7 +791,7 @@ window.console = console;
 			</div>
 			<div class="row bindto-player">
 				<div class="col-md-6">
-					Speed: ${currencies.livestock.computedSpeed}
+					速度: ${currencies.livestock.computedSpeed}
 				</div>
 				<div class="col-md-6">
 					Supply: ${currencies.livestock.supply}/${currencies.livestock.maxSupply}
@@ -840,5 +840,9 @@ window.console = console;
 
 </script>
 -->
+<!--客服 开始-->
+<link rel="stylesheet" href="//likexia.gitee.io/game/css/kf.css" type="text/css" media="screen" charset="utf-8">
+<script src="//likexia.gitee.io/game/js/kf.js"></script>
+<!-- 客服 结束 -->
 </body>
 </html>
