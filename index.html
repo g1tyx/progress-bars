@@ -5,7 +5,7 @@
 	<title>进度条 - Progress Bars v1.1.0</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	
-	
+	<script src="zh.js"></script>
 	<script src="lib/underscore.min.js" text="type/javascript"></script>
 	<script src="lib/jquery.min.js" text="type/javascript"></script>
 	<script src="lib/jquery.cookie.js" text="type/javascript"></script>
@@ -103,7 +103,7 @@ window.console = console;
 			<!-- stone -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will gather stone from the mountain.<br>Receives boosts from <label class='text-highlight-color'>Mountain</label> and <label class='text-highlight-color'>Cut Tools</label>.<br>Sells to <label class='text-highlight-color'>Commodity Sales</label>">
-				Stone L${currencies.stone.level}
+				石头 等级 ${currencies.stone.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -118,7 +118,7 @@ window.console = console;
 					速度: ${currencies.stone.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.stone.supply}/${currencies.stone.maxSupply}
+					供应: ${currencies.stone.supply}/${currencies.stone.maxSupply}
 				</div>
 			</div>
 			<span id="stoneBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -140,7 +140,7 @@ window.console = console;
 			<!-- tools -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will create and maintain an arsenel of Cutting Tools.<br>Boosts <label class='text-highlight-color'>Stone</label> and <label class='text-highlight-color'>Wood</label>.">
-				Cut Tools L${currencies.tools1.level}
+				切割工具 等级 ${currencies.tools1.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -154,7 +154,7 @@ window.console = console;
 					速度: ${currencies.tools1.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.tools1.supply}/${currencies.tools1.maxSupply}
+					供应: ${currencies.tools1.supply}/${currencies.tools1.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="tools1AddWorker" class="btn btn-default btn-xs color-tools1 pull-left">&nbsp;+&nbsp;</button>
@@ -175,14 +175,14 @@ window.console = console;
 			<!-- wood -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will gather wood from the forest.<br>Receives boosts from <label class='text-highlight-color'>Forest</label> and <label class='text-highlight-color'>Cut Tools</label>.<br>Sells to <label class='text-highlight-color'>Commodity Sales</label>">
-				Wood L${currencies.wood.level}
+				木头 等级 ${currencies.wood.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.wood.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.wood.unitPrice}
+					价格: $${currencies.wood.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -190,7 +190,7 @@ window.console = console;
 					速度: ${currencies.wood.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.wood.supply}/${currencies.wood.maxSupply}
+					供应: ${currencies.wood.supply}/${currencies.wood.maxSupply}
 				</div>
 			</div>
 			<span id="woodBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -221,7 +221,7 @@ window.console = console;
 			<!-- mountain -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will expedite the gathering of stone and ore.<br>Boosts <label class='text-highlight-color'>Ore</label> and <label class='text-highlight-color'>Stone</label>">
-				Mountain L${currencies.mountain.level}
+				山 等级 ${currencies.mountain.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -235,7 +235,7 @@ window.console = console;
 					速度: ${currencies.mountain.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.mountain.supply}/${currencies.mountain.maxSupply}
+					供应: ${currencies.mountain.supply}/${currencies.mountain.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="mountainAddWorker" class="btn btn-default btn-xs color-mountain pull-left">&nbsp;+&nbsp;</button>
@@ -259,7 +259,7 @@ window.console = console;
 			<!-- forest -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will expedite the gathering of wood and rubber.<br>Boosts <label class='text-highlight-color'>Wood</label> and <label class='text-highlight-color'>Rubber</label>">
-				Forest L${currencies.forest.level}
+				森林 等级 ${currencies.forest.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -273,7 +273,7 @@ window.console = console;
 					速度: ${currencies.forest.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.forest.supply}/${currencies.forest.maxSupply}
+					供应: ${currencies.forest.supply}/${currencies.forest.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="forestAddWorker" class="btn btn-default btn-xs color-forest pull-left">&nbsp;+&nbsp;</button>
@@ -298,14 +298,14 @@ window.console = console;
 			<!-- ore -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will gather ore from the mountain.<br>Receives boosts from <label class='text-highlight-color'>Mountain</label> and <label class='text-highlight-color'>Heat Tools</label>.<br>Sells to <label class='text-highlight-color'>Commodity Sales</label>">
-				Ore L${currencies.ore.level}
+				矿石 等级 ${currencies.ore.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.ore.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.ore.unitPrice}
+					价格: $${currencies.ore.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -313,7 +313,7 @@ window.console = console;
 					速度: ${currencies.ore.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.ore.supply}/${currencies.ore.maxSupply}
+					供应: ${currencies.ore.supply}/${currencies.ore.maxSupply}
 				</div>
 			</div>
 			<span id="oreBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -333,7 +333,7 @@ window.console = console;
 			<!-- tools4 -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will create and maintain an arsenel of Heat Tools.<br>Boosts <label class='text-highlight-color'>Ore</label> and <label class='text-highlight-color'>Coral</label>.">
-				Heat Tools L${currencies.tools4.level}
+				加热工具 等级 ${currencies.tools4.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -347,7 +347,7 @@ window.console = console;
 					速度: ${currencies.tools4.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.tools4.supply}/${currencies.tools4.maxSupply}
+					供应: ${currencies.tools4.supply}/${currencies.tools4.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="tools4AddWorker" class="btn btn-default btn-xs color-tools4 pull-left">&nbsp;+&nbsp;</button>
@@ -365,15 +365,15 @@ window.console = console;
 		<div id="coralDiv" class="invisible">
 			<!-- coral -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
-				data-original-title="Workers will gather coral from the ocean.<br>Receives boosts from <label class='text-highlight-color'>Ocean</label> and <label class='text-highlight-color'>Heat Tools</label>.<br>Sells to <label class='text-highlight-color'>Functional Sales</label>">
-				Coral L${currencies.coral.level}
+				data-original-title="工人们将从海洋中收集珊瑚。<br>获得提升来自 <label class='text-highlight-color'>海洋</label> 和 <label class='text-highlight-color'>加热工具</label>.<br>卖给 <label class='text-highlight-color'>功能性销售</label>">
+				珊瑚 等级 ${currencies.coral.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.coral.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.coral.unitPrice}
+					价格: $${currencies.coral.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -381,7 +381,7 @@ window.console = console;
 					速度: ${currencies.coral.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.coral.supply}/${currencies.coral.maxSupply}
+					供应: ${currencies.coral.supply}/${currencies.coral.maxSupply}
 				</div>
 			</div>
 			<span id="coralBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -439,14 +439,14 @@ window.console = console;
 			<!-- sales1 -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will transport and sell top-side goods.<br>Sells <label class='text-highlight-color'>Stone</label>, <label class='text-highlight-color'>Ore</label>, <label class='text-highlight-color'>Wood</label> and <label class='text-highlight-color'>Rubber</label>">
-				商品销售 L${currencies.sales1.level}
+				商品销售 等级 ${currencies.sales1.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.sales1.workers}
 				</div>
 				<div class="col-md-6">
-					Last Sale: $${currencies.sales1.lastSale}
+					上次销售价格: $${currencies.sales1.lastSale}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -479,14 +479,14 @@ window.console = console;
 			<!-- sales2 -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will transport and sell bottom-side goods.<br>Sells <label class='text-highlight-color'>Coral</label>, <label class='text-highlight-color'>Oil</label>, <label class='text-highlight-color'>Livestock</label> and <label class='text-highlight-color'>Food</label>">
-				Functional Sales L${currencies.sales2.level}
+				Functional Sales 等级 ${currencies.sales2.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.sales2.workers}
 				</div>
 				<div class="col-md-6">
-					Last Sale: $${currencies.sales2.lastSale}
+					上次销售价格: $${currencies.sales2.lastSale}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -522,14 +522,14 @@ window.console = console;
 			<!-- rubber -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will gather rubber from the forest.<br>Receives boosts from <label class='text-highlight-color'>Forest</label> and <label class='text-highlight-color'>Moto Tools</label>.<br>Sells to <label class='text-highlight-color'>Commodity Sales</label>">
-				Rubber L${currencies.rubber.level}
+				Rubber 等级 ${currencies.rubber.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.rubber.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.rubber.unitPrice}
+					价格: $${currencies.rubber.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -537,7 +537,7 @@ window.console = console;
 					速度: ${currencies.rubber.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.rubber.supply}/${currencies.rubber.maxSupply}
+					供应: ${currencies.rubber.supply}/${currencies.rubber.maxSupply}
 				</div>
 			</div>
 			<span id="rubberBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -557,7 +557,7 @@ window.console = console;
 			<!-- tools2 -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will create and maintain an arsenel of Motorized Tools.<br>Boosts <label class='text-highlight-color'>Rubber</label> and <label class='text-highlight-color'>Food</label>.">
-				Moto Tools L${currencies.tools2.level}
+				Moto工具 等级 ${currencies.tools2.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -571,7 +571,7 @@ window.console = console;
 					速度: ${currencies.tools2.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.tools2.supply}/${currencies.tools2.maxSupply}
+					供应: ${currencies.tools2.supply}/${currencies.tools2.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="tools2AddWorker" class="btn btn-default btn-xs color-tools2 pull-left">&nbsp;+&nbsp;</button>
@@ -590,14 +590,14 @@ window.console = console;
 			<!-- food -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will gather food from the prairie.<br>Receives boosts from <label class='text-highlight-color'>Prairie</label> and <label class='text-highlight-color'>Moto Tools</label>.<br>Sells to <label class='text-highlight-color'>Functional Sales</label>">
-				Food L${currencies.food.level}
+				食物 等级 ${currencies.food.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.food.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.food.unitPrice}
+					价格: $${currencies.food.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -605,7 +605,7 @@ window.console = console;
 					速度: ${currencies.food.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.food.supply}/${currencies.food.maxSupply}
+					供应: ${currencies.food.supply}/${currencies.food.maxSupply}
 				</div>
 			</div>
 			<span id="foodBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -631,7 +631,7 @@ window.console = console;
 			<!-- ocean -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will expedite the gathering of oil and coral.<br>Boosts <label class='text-highlight-color'>Oil</label> and <label class='text-highlight-color'>Coral</label>">
-				Ocean L${currencies.ocean.level}
+				海洋 等级 ${currencies.ocean.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -645,7 +645,7 @@ window.console = console;
 					速度: ${currencies.ocean.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.ocean.supply}/${currencies.ocean.maxSupply}
+					供应: ${currencies.ocean.supply}/${currencies.ocean.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="oceanAddWorker" class="btn btn-default btn-xs color-ocean pull-left">&nbsp;+&nbsp;</button>
@@ -667,7 +667,7 @@ window.console = console;
 			<!-- prairie -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will expedite the farming of food and raising of livestock.<br>Boosts <label class='text-highlight-color'>Food</label> and <label class='text-highlight-color'>Livestock</label>">
-				Prairie L${currencies.prairie.level}
+				牧场 等级 ${currencies.prairie.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -681,7 +681,7 @@ window.console = console;
 					速度: ${currencies.prairie.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.prairie.supply}/${currencies.prairie.maxSupply}
+					供应: ${currencies.prairie.supply}/${currencies.prairie.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="prairieAddWorker" class="btn btn-default btn-xs color-prairie pull-left">&nbsp;+&nbsp;</button>
@@ -707,14 +707,14 @@ window.console = console;
 			<!-- oil -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will gather oil from the ocean.<br>Receives boosts from <label class='text-highlight-color'>Ocean</label> and <label class='text-highlight-color'>Aqua Tools</label>.<br>Sells to <label class='text-highlight-color'>Functional Sales</label>">
-				Oil L${currencies.oil.level}
+				石油 等级 ${currencies.oil.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.oil.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.oil.unitPrice}
+					价格: $${currencies.oil.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -722,7 +722,7 @@ window.console = console;
 					速度: ${currencies.oil.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.oil.supply}/${currencies.oil.maxSupply}
+					供应: ${currencies.oil.supply}/${currencies.oil.maxSupply}
 				</div>
 			</div>
 			<span id="oilBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>
@@ -744,7 +744,7 @@ window.console = console;
 			<!-- tools3 -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will create and maintain an arsenel of Aqua Tools.<br>Boosts <label class='text-highlight-color'>Livestock</label> and <label class='text-highlight-color'>Oil</label>.">
-				Aqua Tools L${currencies.tools3.level}
+				水产工具 等级 ${currencies.tools3.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
@@ -758,7 +758,7 @@ window.console = console;
 					速度: ${currencies.tools3.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.tools3.supply}/${currencies.tools3.maxSupply}
+					供应: ${currencies.tools3.supply}/${currencies.tools3.maxSupply}
 				</div>
 			</div>
 			<button type="button" id="tools3AddWorker" class="btn btn-default btn-xs color-tools3 pull-left">&nbsp;+&nbsp;</button>
@@ -779,14 +779,14 @@ window.console = console;
 			<!-- livestock -->
 			<h4 class="text-center bindto-player" data-toggle="tooltip" data-html="true"
 				data-original-title="Workers will raise livestock from the prairie.<br>Receives boosts from <label class='text-highlight-color'>Prairie</label> and <label class='text-highlight-color'>Aqua Tools</label>.<br>Sells to <label class='text-highlight-color'>Functional Sales</label>">
-				Livestock L${currencies.livestock.level}
+				畜牧 等级 ${currencies.livestock.level}
 			</h4>
 			<div class="row bindto-player">
 				<div class="col-md-6">
 					工人: ${currencies.livestock.workers}
 				</div>
 				<div class="col-md-6">
-					Price: $${currencies.livestock.unitPrice}
+					价格: $${currencies.livestock.unitPrice}
 				</div>
 			</div>
 			<div class="row bindto-player">
@@ -794,7 +794,7 @@ window.console = console;
 					速度: ${currencies.livestock.computedSpeed}
 				</div>
 				<div class="col-md-6">
-					Supply: ${currencies.livestock.supply}/${currencies.livestock.maxSupply}
+					供应: ${currencies.livestock.supply}/${currencies.livestock.maxSupply}
 				</div>
 			</div>
 			<span id="livestockBadge" data-toggle="tooltip" data-original-title="Current synergy bonus" class="label label-default pull-right">1x</span>

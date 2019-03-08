@@ -1218,10 +1218,10 @@ function updateUpgradesUI() {
 		
 		var $elem;
 		$elem = $('#upgrade' + count);
-		$elem.attr('data-original-title', upgrade.tooltip);
+		$elem.attr('data-original-title', cnItem(upgrade.tooltip));
 		$elem.data('upgrade', upgrade);
 		
-		$('#upgrade' + count + 'Label').html(upgrade.name);
+		$('#upgrade' + count + 'Label').html(cnItem(upgrade.name));
 		
 		$elem = $('#upgrade' + count + 'Icon');
 		$elem.removeClass();
@@ -1237,10 +1237,10 @@ function updateUpgradesUI() {
 	while(count <= 5) {
 		var $elem;
 		$elem = $('#upgrade' + count);
-		$elem.attr('data-original-title', "You bought it all, you're quite the tycoon!");
+		$elem.attr('data-original-title', "你买了这一切，你真是个大亨!");
 		$elem.data('upgrade', null);
 		
-		$('#upgrade' + count + 'Label').html('Sold Out');
+		$('#upgrade' + count + 'Label').html('已售完');
 		
 		$elem = $('#upgrade' + count + 'Icon');
 		$elem.removeClass();
