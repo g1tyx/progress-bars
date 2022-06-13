@@ -1218,10 +1218,10 @@ function updateUpgradesUI() {
 		
 		var $elem;
 		$elem = $('#upgrade' + count);
-		$elem.attr('data-original-title', cnItem(upgrade.tooltip));
+		$elem.attr('data-original-title',upgrade.tooltip);
 		$elem.data('upgrade', upgrade);
 		
-		$('#upgrade' + count + 'Label').html(cnItem(upgrade.name));
+		$('#upgrade' + count + 'Label').html(upgrade.name);
 		
 		$elem = $('#upgrade' + count + 'Icon');
 		$elem.removeClass();
